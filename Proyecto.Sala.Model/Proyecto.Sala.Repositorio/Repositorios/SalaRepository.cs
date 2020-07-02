@@ -18,7 +18,12 @@ namespace Proyecto.Sala.Repositorio.Repositorios
 
         public void DeleteSala(int id)
         {
-            throw new NotImplementedException();
+            var sala = dBContext.sala.SingleOrDefault(e => e.id_sala == id);
+            if (sala != null)
+            {
+                dBContext.sala.Remove(sala);
+                dBContext.SaveChanges();
+            }
         }
 
         public SalaEntidad GetSalaID(int id)
@@ -40,7 +45,8 @@ namespace Proyecto.Sala.Repositorio.Repositorios
 
         public void PostSala(SalaEntidad salaEntidad)
         {
-            throw new NotImplementedException();
+            dBContext.sala.Add(MapperSala(salaEntidad));
+            dBContext.SaveChanges();
         }
 
         public void PutSala(SalaEntidad salaEntidad)
@@ -60,6 +66,17 @@ namespace Proyecto.Sala.Repositorio.Repositorios
             salaEntidad.fecha = salaData.fecha_sala;
 
             return salaEntidad;
+        }
+
+        private salaDTO MapperSala(SalaEntidad salaData)
+        {
+            salaDTO salaDto = new salaDTO();
+
+            salaDto.nombre_sala = salaData.Nombre;
+            salaDto.capasidad_sala = salaData.Capacidad;
+            salaDto.tiposala_sala = salaData.TipoSala;
+            salaDto.fecha_sala = salaData.fecha;
+            return salaDto;
         }
     }
 }

@@ -1,0 +1,24 @@
+<div class="contenedor-div-tabla">
+    <table class="contenedor-tabla">
+      <thead>
+        <tr>
+          <th class="">Nombre</th>
+          <th class="">Capacidad</th>
+          <th class="">Tipo de Sala</th>
+          <th class="">Fecha</th>
+          <th class="" style="color:red">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of this.isala">
+        <tr>
+          <td>{{item.Nombre}}</td>
+          <td>{{item.Capacidad}}</td>
+          <td>{{item.TipoSala}}</td>
+          <td>{{item.fecha}}</td>
+          <td>
+            <input name="plan" type="radio" (click)="EliminarSala(item)">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

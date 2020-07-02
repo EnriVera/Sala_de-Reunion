@@ -1,0 +1,9 @@
+<div>
+    <form (ngSubmit)="AgregarSala()" #form="ngForm">
+        <input placeholder="Nombre" type="text" [(ngModel)]="this.sala.Nombre" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Capasidad" type="number" [(ngModel)]="this.sala.Capacidad" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Tipo de Sala" type="text" [(ngModel)]="this.sala.TipoSala" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Fecha" type="date" [(ngModel)]="this.sala.fecha" [ngModelOptions]="{standalone: true}">
+        <input type="submit" placeholder="Agregar Sala">
+    </form>
+</div>

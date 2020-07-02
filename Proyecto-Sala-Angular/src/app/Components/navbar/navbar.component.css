@@ -1,0 +1,21 @@
+.contenedor{
+    width: 70em;
+    margin: auto;
+}
+.contenedorDiv{
+    background: #f3f3f3;
+    display: flex;
+    flex-grow: 4;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedorDiv > a{
+    background: rgb(233, 233, 233);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

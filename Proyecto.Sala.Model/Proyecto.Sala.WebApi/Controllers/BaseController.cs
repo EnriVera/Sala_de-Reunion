@@ -7,7 +7,6 @@ using System.Web.Http;
 
 namespace Proyecto.Sala.WebApi.Controllers
 {
-    [Authorize]
     public class BaseController : ApiController
     {
     }
