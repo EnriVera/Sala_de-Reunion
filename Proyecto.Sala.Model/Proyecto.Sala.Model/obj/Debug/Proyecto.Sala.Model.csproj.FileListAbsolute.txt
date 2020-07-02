@@ -1,0 +1,5 @@
+D:\Sala_de_Reunion\Proyecto.Sala.Model\Proyecto.Sala.Model\obj\Debug\Proyecto.Sala.Model.csproj.CoreCompileInputs.cache
+D:\Sala_de_Reunion\Proyecto.Sala.Model\Proyecto.Sala.Model\bin\Debug\Proyecto.Sala.Model.dll
+D:\Sala_de_Reunion\Proyecto.Sala.Model\Proyecto.Sala.Model\bin\Debug\Proyecto.Sala.Model.pdb
+D:\Sala_de_Reunion\Proyecto.Sala.Model\Proyecto.Sala.Model\obj\Debug\Proyecto.Sala.Model.dll
+D:\Sala_de_Reunion\Proyecto.Sala.Model\Proyecto.Sala.Model\obj\Debug\Proyecto.Sala.Model.pdb
