@@ -30,4 +30,8 @@ export class ApiSalaService{
     console.log(id);
     return this.httpclient.delete(this.url_sala+`api/sala/delete?id=${id}`);
   }
+
+  UpdateSala(objeto):Observable<any>{
+    return this.httpclient.put(this.url_sala+'api/sala/update', JSON.stringify(objeto), this.httpOptions);
+  }
 }

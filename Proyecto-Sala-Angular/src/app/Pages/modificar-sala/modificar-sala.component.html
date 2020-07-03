@@ -1,0 +1,18 @@
+<div>
+    <form (ngSubmit)="ModificarSala()" #form="ngForm">
+        <!--<input type="text" list="browsers" placeholder="Seleccione un campo" />
+        <datalist id="browsers" [(ngModel)]="salaCampo" [ngModelOptions]="{standalone: true}">
+            <option [ngValue]="item" *ngFor="let item of this.sala" >{{item.Nombre}}</option>
+        </datalist>-->
+
+
+        <select [(ngModel)]="salaCampo" [ngModelOptions]="{standalone: true}">
+            <option [ngValue]="item" *ngFor="let item of this.sala" >{{item.Nombre}}</option>
+        </select>
+        <input placeholder="Nombre de la Sala" type="text" [(ngModel)]="this.salaCampo.Nombre" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Capacidad" type="number" [(ngModel)]="this.salaCampo.Capacidad" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Tipo de Sala" type="text" [(ngModel)]="this.salaCampo.TipoSala" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Fecha" type="date" [(ngModel)]="this.salaCampo.fecha" [ngModelOptions]="{standalone: true}">
+        <input placeholder="Modificar los datos" type="submit">
+    </form>
+</div>

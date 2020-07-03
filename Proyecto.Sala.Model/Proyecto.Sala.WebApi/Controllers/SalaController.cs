@@ -45,5 +45,13 @@ namespace Proyecto.Sala.WebApi.Controllers
             this.repository.DeleteSala(int.Parse(id));
             return Ok();
         }
+
+        [HttpPut]
+        [Route("api/sala/update")]
+        public IHttpActionResult UpdateSala(SalaEntidad salaEntidad)
+        {
+            this.repository.PutSala(salaEntidad);
+            return Ok();
+        }
     }
 }

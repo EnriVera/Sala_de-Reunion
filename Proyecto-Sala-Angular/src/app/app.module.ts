@@ -7,6 +7,7 @@ import { AgregarSalaComponent } from './Pages/agregar-sala/agregar-sala.componen
 import { ListaSalaComponent } from './Pages/lista-sala/lista-sala.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
+import { ModificarSalaComponent } from './Pages/modificar-sala/modificar-sala.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from "@angular/forms";
     AppComponent,
     NavbarComponent,
     AgregarSalaComponent,
-    ListaSalaComponent
+    ListaSalaComponent,
+    ModificarSalaComponent
   ],
   imports: [
     BrowserModule,
